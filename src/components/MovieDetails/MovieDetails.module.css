@@ -1,0 +1,48 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.title {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #314bf2;
+}
+
+.desc {
+  padding: 10px;
+  margin: 20px;
+}
+
+.scores {
+  margin-bottom: 20px;
+}
+
+.overview {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.genres {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.genre {
+  list-style-type: circle;
+  margin-bottom: 157px;
+}
+
+.additionalTitle {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  list-style-type: none;
+}

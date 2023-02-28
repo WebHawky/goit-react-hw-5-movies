@@ -1,0 +1,10 @@
+.nav {
+  margin: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.active {
+  color: rgb(65, 49, 242);
+  cursor: pointer;
+}

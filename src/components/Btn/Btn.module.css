@@ -1,0 +1,49 @@
+.btn {
+  display: inline-block;
+  padding: 15px 24px;
+  position: relative;
+  font-size: 14px;
+  line-height: 15px;
+  opacity: 1;
+  text-transform: uppercase;
+  background-color: #040000;
+  border-width: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+}
+
+.btn:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  color: #040000;
+  background: rgb(39, 71, 212);
+  background: linear-gradient(
+    205deg,
+    rgba(39, 71, 212) 0%,
+    rgba(4, 0, 0, 1) 70%
+  );
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.btn:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.btn span {
+  color: #ffffff;
+  position: relative;
+}

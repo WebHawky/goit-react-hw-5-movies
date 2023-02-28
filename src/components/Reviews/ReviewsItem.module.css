@@ -1,0 +1,14 @@
+.item {
+  margin: 10px;
+  list-style-type: none;
+}
+.author {
+  margin-bottom: 10px;
+  color: #314bf2;
+}
+
+.error {
+  margin: 30px;
+  text-align: center;
+  color: #314bf2;
+}
